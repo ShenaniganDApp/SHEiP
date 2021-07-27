@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
----
+<REMOVE>---
 SHEiP: <to be assigned>
 title: <SHEiP title>
 author: <a list of the author's or authors' name(s) and/or username(s), or name(s) and email(s), e.g. (use with the parentheses or triangular brackets): FirstName LastName (@GitHubUsername), FirstName LastName <foo@bar.com>, FirstName LastName (@GitHubUsername) and GitHubUsername (@GitHubUsername)>
@@ -19,7 +19,7 @@ created: <date created on, in ISO 8601 (yyyy-mm-dd) format>
 edited: <date created on, in ISO 8601 (yyyy-mm-dd) format>
 requires: <EIP number(s)>
 replaces: <EIP number(s)>
----
+<REMOVE>---
 
 <!--PROPOSE A NEW SHEiP-->
 
