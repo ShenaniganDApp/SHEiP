@@ -3,7 +3,7 @@ SHEiP: SHEiP-1
 title: Shenanigan Improvement Proposals (SHEiP)
 author: Victor Ginelli (http://github.com/youngkidwarrior)
 discussions-to: https://github.com/Shenanigannetwork/SHEiP/issues/1
-status: Draft
+status: Final
 category: Meta
 type:
 created: 2021-07-15
