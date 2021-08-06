@@ -86,22 +86,21 @@ Here are the requirements from the article:
 > - Contributions will be open for a one week window; During which LP tokens & ETH contributions will be pegged at the start of the PoolHAUS contribution window.
 > - PoolHAUS will hold its LP position in the minion for 3 months, meaning contributors won’t be able to Ragequit (claim) their LP tokens back from the DAO before this 3 month period ends (Unless otherwise voted by the DAO).
 
-It seems as though a community member @yalormewn is willing to donate their HAUS tokens to this cause, with promise of returned reward at the end of the 3 months. The max Shenanigan can afford to match with is 25,000 DAI, or ~1565.92 HAUS (at time of writing). This opens up more options for SHE
+It seems as though a community member @yalormewn is willing to donate their HAUS tokens to this cause, with promise of return reward after the 3 months. Yalor offered to pledge 1k HAUS (currently $16651.2) with the promise it is returned at the end of the 3 month period. This opens up more options for SHE
 
 There are a few monetary options. It makes sense to pledge LP Tokens since an extra 825 HAUS will be given to LP pledgers over WETH pledgers
-1. Pledge the minimum 10 LP Tokens (no community)
-2. Pledge $10,000 worth of LP Tokens (no community)
-3. Match $15,000 with community HAUS
-4. Match $25,000 with community HAUS
+1. Don't pledge to POOLHaus
+2. Pledge the minimum 10 LP Tokens (no community)
+3. Pledge $10,000 worth of LP Tokens (no community)
+4. Match 1k Haus from Yalor (currently $16651.2) with WETH
 
 Option 0 - No pledge
 Option 1 - will provide very little reward at the minimum but it is very safe
 Option 2 - gives decent rewards and allows SHE to keep everything that is earned,
-Option 3 - is more in our budget than Option 4, but gives us 3x the rewards as Option 2. We would have to give donators back their share of the rewards (e.g. 1/2)
-Option 4 - Same as 3, but gives us 5x rewards as Option 2
+Option 3 - gives biggest rewards by allowing SHE to utilize Yalor's HAUS pledge, but also requires the largest risk from SHE
 
 
-We will use a gnosis multisig on xdai controlled by SHE Core to pledge the DAO, since a DAO vote will take too long to make the 1 week pledge window. We will have use blockscout to make sure Yalor gets his fair share of rewards back at the end of the 3 months.
+We will use a gnosis multisig on xdai controlled by SHE Core to pledge the DAO, since a DAO vote will take too long to make the 1 week pledge window. 
 
 ## Security Considerations
 <!--All SHEiPs must contain a section that discusses the security implications/considerations relevant to the proposed change. Include information that might be important for security discussions, surfaces risks and can be used throughout the life cycle of the proposal. E.g. include security-relevant design decisions, concerns, important discussions, implementation-specific guidance and pitfalls, an outline of threats and risks and how they are being addressed. SHEiP submissions missing the "Security Considerations" section will be rejected. An SHEiP cannot proceed to status "Final" without a Security Considerations discussion deemed sufficient by the reviewers.-->
