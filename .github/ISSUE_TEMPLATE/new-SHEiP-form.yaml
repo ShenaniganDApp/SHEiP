@@ -1,0 +1,165 @@
+name: New SHEiP (Form)
+description: Make a proposal to receive funding to improve SHE
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: '### This form is not meant to be filled in one sitting. Take your time. Feel free to submit an incomplete form and come back later.'
+
+  - type: input
+    id: name
+    attributes:
+      label: What is the name of the proposal?
+    validations:
+      required: true
+
+  - type: input
+    id: authors
+    attributes:
+      label: Who authored the proposal?
+      placeholder: Happy Gilmore (@HappygGilmoreGolfer)
+    validations:
+      required: true
+
+  - type: input
+    id: date-created
+    attributes:
+      label: Date Created
+      description: Today's date, in ISO 8601 (yyyy-mm-dd) format
+    validations:
+      required: true
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: What is the current status of this proposal?
+      description: |
+        - Idea: a SHEiP issue that is incomplete.
+        - Draft: a SHEiP issue that is complete but undergoing rapid iteration and changes.
+      options:
+        - Idea
+        - Draft
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Please choose a category for the proposal.
+      description: |
+        - Standards: a SHEiP that affects the product or community.
+        - Meta: a SHEiP that affects the governance process for SHEiPs.
+        - Informational: a SHEiP that is merely for informational purposes, but requires no action by the community, and will not be merged as a SHEiP.
+      options:
+        - Standards
+        - Meta
+        - Informational
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Please choose the type of proposal
+      description: |
+        _*This field is only required for the Standards category*_
+        - Development: a SHEiP that affects code or codebase standards.
+        - Design: a SHEiP that affects the way SHE interacts with its members.
+        - Operations: a SHEiP that affects DAO processes or conventions.
+        - Documentation: a SHEiP that affects the written word of SHE
+      options:
+        - Development
+        - Design
+        - Operations
+        - Documentation
+
+  - type: input
+    id: summary
+    attributes:
+      label: Simple Summary
+      description: Provide a simplified and layman-accessible explanation of the SHEiP. Try to keep it at one sentence.
+    validations:
+      required: true
+
+  - type: textarea
+    id: abstract
+    attributes:
+      label: Abstract
+      description: A short (~200 word) description of the technical issue being addressed
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Motivation is critical for SHEiPs that want to change SHE. It should clearly explain why SHE is inadequate in its current state and then address the problem that the SHEiP solves. SHEiP submissions without sufficient motivation may be rejected outright
+    validations:
+      required: true
+
+  - type: textarea
+    id: specification
+    attributes:
+      label: Specification
+      description: |
+        The technical specification should describe the syntax and semantics of any new feature.
+
+        This section should include information on your requested Score. If you are unfamiliar with Score, refer to the Metagame wiki about XP https://wiki.metagame.wtf/docs/how-does-it-work/xp
+
+        You should also include a Minimum Viable Contribution. Answer the question, "What does my contibution look like in its most basic form, i.e. "make images for Instagram"
+
+      value: |
+        Example from SHEiP-4:
+
+        Minimum Viable Contributions
+          - 60 minute live yoga class via zoom
+          - Recording of the live session
+          - attendance will be taken and documented
+        Bonus Contributions
+          - Articles related to the themes and what we are focusing on in the yoga class
+          - Athlete specific focused meetings
+          - The yoga classes will be added to the Flow with SHE Repo where I will be submitting the weekly contributions to be reviewed. If this proposal passes, this repo will be forked and merged into the SHE github organization where it will added to the sourcecred graph.
+
+        Cred Allotment
+
+          - Instructor MVC rate (minimum viable contribution) 16 cred
+          - Participant Rate via an initiative 1 cred
+          In addition to the contribution cred, bonus cred will be allotted per live person at a rate of .2 cred.
+
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: The rationale fleshes out the specification by describing what motivated the design and why particular design decisions were made. It should describe alternate designs that were considered and related work, e.g. how the feature is works in other environments. The rationale may also provide evidence of consensus within the community, and should discuss important objections or concerns raised during discussion
+
+  - type: textarea
+    id: backwards-compatibility
+    attributes:
+      label: Backwards Compatibility
+      description: All SHEiPs that introduce backwards incompatibilities must include a section describing these incompatibilities and their severity. The SHEiP must explain how the author proposes to deal with these incompatibilities. SHEiP submissions without a sufficient backwards compatibility section may be rejected outright.
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation
+      description: The implementations must be completed before any SHEiP is given status "Final", but it need not be completed before the SHEiP is accepted.
+
+  - type: textarea
+    id: security-considerations
+    attributes:
+      label: Security Considerations
+      description: All SHEiPs must contain a section that discusses the security implications/considerations relevant to the proposed change. Include information that might be important for security discussions, surfaces risks and can be used throughout the life cycle of the proposal. E.g. include security-relevant design decisions, concerns, important discussions, implementation-specific guidance and pitfalls, an outline of threats and risks and how they are being addressed. SHEiP submissions missing the "Security Considerations" section will be rejected. An SHEiP cannot proceed to status "Final" without a Security Considerations discussion deemed sufficient by the reviewers.
+
+  - type: input
+    id: requires
+    attributes:
+      label: SHEiP number(s)
+      description: List any blocking SHEiPs
+      placeholder: '#SHEiP-1, #SHEiP-2'
+
+  - type: input
+    id: replaces
+    attributes:
+      label: SHEiP number(s)
+      description: List any SHEiPs this replaces
+      placeholder: '#SHEiP-2, #SHEiP-3'
